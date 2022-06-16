@@ -1,3 +1,16 @@
 .button_1 {
-    
+    height: 46px;
+    width: 176px;
+    background-color: $main-green;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: $white;
+    text-transform: capitalize;
+    border: none;
+    transition-duration: 0.4s;
+    &:hover{
+        background-color: $background;
+        color: $main-green;
+    }
 }
