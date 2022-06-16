@@ -1,0 +1,93 @@
+.module {
+    background-color: #f0ebe5;
+    line-height: 2;
+    &__info{    
+        padding:  45px 0 45px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        line-height: 1.5;
+
+            &--title {
+                font-size: 24px;
+            }
+            &--info {
+                font-size: 14px;
+                font-weight: 100;
+            }
+            &--motto {
+                align-items: center;
+                text-align: center;
+                width: 322px;
+                height: 113px;
+                font-size: 24px;
+                line-height: 1.5;
+                margin: 0 45px;
+                padding-top: 41px;
+            }
+            &--wrapper {
+                text-align: center;
+                align-items: center;
+                width: 208px;
+                margin: 0px 103px;
+                line-height: 1.5;
+            }
+            &--icon {
+                width: 90px;
+                height: 90px;
+                margin: 30px 0 30px 0;
+            }
+} 
+
+    &__sending {
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 46px 0 51px 0;
+        color: white;
+        line-height: 1.5;
+            &--title {
+                font-size: 24px;
+            }
+            &--info {
+                font-size: 14px;
+            }
+            &--icon {
+                width: 120px;
+                height: 120px;
+            }
+}
+}
+
+
+.module__enjoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 87px 27px 0;
+    line-height: 2;
+    &--wrapper{
+        width: 360px;
+        height: 112px;
+    }
+    &--title {
+        font-size: 24px;
+    }
+    &--info {
+        font-size: 14px;
+    }
+    &--figure{
+        min-width: 414px;
+        height: 304px;
+    }
+    &--image{
+        width: 100%;
+    }
+    }

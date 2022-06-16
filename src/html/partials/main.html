@@ -1,20 +1,63 @@
-<main>
-  <section>
-    <h3>Volverse organizado se siente mejor con open spaces</h3>
-    <img src="./assets/images/icon_1.png" title="icon_1" alt="icon_1" />
-    <h2>Lo que necesitas</h2>
-    <p>Una línea de productos diseñados para todos tus espacios</p>
-    <img src="./assets/images/icon_2.png" title="icon_2" alt="icon_2" />
-    <h2>Materias primas sustentables</h2>
-    <p>Todos los productos con materias primas sustentables</p>
-    <img src="./assets/images/icon_3.png" title="icon_3" alt="icon_3" />
-    <h2>Guía</h2>
-    <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
+<main class="module">
+  <h3 class="module__info--motto">
+    Volverse organizado se siente mejor con OPEN SPACES
+  </h3>
+  <section class="module__info">
+    <include
+      src="module_1.html"
+      icon="./assets/images/icon_1.png"
+      title="icon_1"
+      alt="icon_1"
+      titleMain="Lo que necesitas"
+      infoMain="Una línea de productos diseñados para todos tus espacios"
+    ></include>
+
+    <include
+      src="module_1.html"
+      icon="./assets/images/icon_2.png"
+      title="icon_2"
+      alt="icon_2"
+      titleMain="Materias primas sustentables"
+      infoMain="Todos los productos con materias primas sustentables"
+    ></include>
+
+    <include
+      src="module_1.html"
+      icon="./assets/images/icon_3.png"
+      title="icon_1"
+      alt="icon_1"
+      titleMain="Guía"
+      infoMain="Soporte y asesoramiento para ayudarte con tu objetivo"
+    ></include>
   </section>
-  <section>
-    <img src="./assets/images/icon_4.png" title="icon_4" alt="icon_4" />
-    <h3>Envío gratis garantizado</h3>
-    <p>Envío gratis en compras desde 100</p>
-    <h2>Comprar ahora</h2>
+
+  <section class="module__sending">
+    <img
+      src="./assets/images/icon_4.png"
+      title="icon_4"
+      alt="icon_4"
+      class="module__sending--icon"
+    />
+    <h2 class="module__sending--title">Envío gratis garantizado</h2>
+    <p class="module__sending--info">Envío gratis en compras desde 100</p>
+    <button class="button_3">Comprar ahora</button>
+  </section>
+
+  <section class="module__enjoy">
+    <div class="module__enjoy--wrapper">
+      <h3 class="module__enjoy--title">Disfruta creando espacios</h3>
+      <h2 class="module__enjoy--info">
+        Una línea de productos diseñados para todos tus espacios
+      </h2>
+    </div>
+    <button class="button_1">Comprar ahora</button>
+    <figure class="module__enjoy--figure">
+      <img
+        class="module__enjoy--image"
+        src="./assets/images/creando-espacios.jpg"
+        alt="module3__image"
+        title="module3__image"
+      />
+    </figure>
   </section>
 </main>
