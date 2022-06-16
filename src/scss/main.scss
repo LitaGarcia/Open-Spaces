@@ -1,0 +1,25 @@
+// @import 'core/variables';
+// @import 'core/reset';
+// @import 'components/code';
+// @import 'components/links';
+// @import 'layout/page';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'pages/index';
+.boxes {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .box1 {
+    display: inline;
+  }
+  
+  .box2 {
+    display: inline-block;
+  }
+  
+  .box3 {
+    display: block;
+  }
+  
