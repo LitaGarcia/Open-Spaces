@@ -1,63 +1,61 @@
-.main__module1{
-    background-color: rosybrown;
-    padding:  45px 0 45px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    row-gap: 41px;
-    &--motto {
-        align-items: center;
-        text-align: center;
-        width: 322px;
-        height: 113px;
-        font-size: 24px;
+.main {
+    background-color: #f0ebe5;
+    &__module1{    
+        padding:  45px 0 45px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
         line-height: 1.5;
-        margin: 0 45px;
-        // background-color: inherit;
-    }
-    &--boxes {
-        text-align: center;
-        align-items: center;
-    width: 208px;
-    margin: 0 103px;
-    }
+            &--title {
+                font-size: 24px;
+            }
+            &--info {
+                font-size: 14px;
+                font-weight: 100;
+            }
+            &--motto {
+                align-items: center;
+                text-align: center;
+                width: 322px;
+                height: 113px;
+                font-size: 24px;
+                line-height: 1.5;
+                margin: 0 45px;
+                padding-top: 41px;
+            }
+            &--boxes {
+                text-align: center;
+                align-items: center;
+                width: 208px;
+                margin: 0px 103px;
+            }
+            &--icon {
+                width: 90px;
+                height: 90px;
+                margin: 30px 0 30px 0;
+            }
 } 
 
-
-//module2//
-
-.main__module2 {
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 46px 0 51px 0;
-    color: white;
-    line-height: 1.5;
-    &--title {
-
-        font-size: 24px;
-
-    }
-    &--info {
-        font-size: 14px;
-    }
+    &__module2 {
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 46px 0 51px 0;
+        color: white;
+        line-height: 1.5;
+            &--title {
+                font-size: 24px;
+            }
+            &--info {
+                font-size: 14px;
+            }
+            &--icon {
+                width: 120px;
+                height: 120px;
+            }
 }
-
-// .main__section {
-//     background-color: rosybrown;
-//     padding:  45px 18px 45px;
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: repeat(3, 1fr);
-//     row-gap: 41px;
-//     &--title {
-//         text-align: center;
-//     }
-// }
-// .main__boxes {
-//     text-align: center;
-//     align-items: center;
-// }
+}
