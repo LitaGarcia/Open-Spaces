@@ -1,0 +1,15 @@
+.main__section {
+    background-color: rosybrown;
+    padding:  45px 18px 45px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 41px;
+    &--title {
+        text-align: center;
+    }
+}
+.main__boxes {
+    text-align: center;
+    align-items: center;
+}
