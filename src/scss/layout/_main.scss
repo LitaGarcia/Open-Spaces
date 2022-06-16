@@ -1,12 +1,14 @@
-.main {
+.module {
     background-color: #f0ebe5;
-    &__module1{    
+    line-height: 2;
+    &__info{    
         padding:  45px 0 45px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-content: center;
         line-height: 1.5;
+
             &--title {
                 font-size: 24px;
             }
@@ -24,11 +26,12 @@
                 margin: 0 45px;
                 padding-top: 41px;
             }
-            &--boxes {
+            &--wrapper {
                 text-align: center;
                 align-items: center;
                 width: 208px;
                 margin: 0px 103px;
+                line-height: 1.5;
             }
             &--icon {
                 width: 90px;
@@ -37,7 +40,7 @@
             }
 } 
 
-    &__module2 {
+    &__sending {
         background-color: orange;
         display: flex;
         flex-direction: column;
@@ -61,15 +64,30 @@
 }
 }
 
-.main__module3 {
+
+.module__enjoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 87px 27px 0;
+    line-height: 2;
+    &--wrapper{
+        width: 360px;
+        height: 112px;
+    }
     &--title {
         font-size: 24px;
     }
     &--info {
         font-size: 14px;
     }
-
-    &--responsive{
-        width: 100vw;
+    &--figure{
+        min-width: 414px;
+        height: 304px;
     }
-}
+    &--image{
+        width: 100%;
+    }
+    }
