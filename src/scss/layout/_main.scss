@@ -43,6 +43,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         gap: 10px;
         padding: 46px 0 51px 0;
         color: white;
@@ -58,4 +59,17 @@
                 height: 120px;
             }
 }
+}
+
+.main__module3 {
+    &--title {
+        font-size: 24px;
+    }
+    &--info {
+        font-size: 14px;
+    }
+
+    &--responsive{
+        width: 100vw;
+    }
 }
