@@ -6,6 +6,20 @@
     flex-direction: column;
     align-items: center;
     padding-top: 19px;
+    gap: 35%;
+    &__nav{
+        background-color: blue;
+    
+        @media all and(max-width: 1728px){
+            display: none;
+        }
+    }
+    &__title {
+            color: $main-title;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+
+        }
     &__menu{
         display: flex;
         flex-direction: row;
@@ -24,16 +38,5 @@
             top: 0;
         }
     }
-    &__button {
 
-        
     }
-
-&__nav{
-    background-color: blue;
-
-    @media all and(max-width: 1728px){
-        display: none;
-    }
-}
-}
