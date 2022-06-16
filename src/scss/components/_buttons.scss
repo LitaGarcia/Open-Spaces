@@ -1,10 +1,16 @@
-.icon4 {
-    width: 112px;
-    height: 98px;
-}
-
-.button_3 {
-    width: 175px;
-    height: 48px;
-    margin: 5px 120px;
+.button_1 {
+    height: 46px;
+    width: 176px;
+    background-color: $main-green;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: $white;
+    text-transform: capitalize;
+    border: none;
+    transition-duration: 0.4s;
+    &:hover{
+        background-color: $background;
+        color: $main-green;
+    }
 }
