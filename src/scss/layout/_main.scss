@@ -1,15 +1,47 @@
-.main__section {
+.main__module1{
     background-color: rosybrown;
     padding:  45px 18px 45px;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
     row-gap: 41px;
-    &--title {
+    &--boxes {
         text-align: center;
+        align-items: center;
+    width: 208px;
+    }
+
+} 
+.motto {
+    align-items: center;
+    text-align: center;
+    width: 322px;
+    height: 113px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+//module2//
+
+.main__module2 {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 46px 0 51px 0;
+    color: white;
+    line-height: 1.5;
+    &--title {
+
+        font-size: 24px;
+
+    }
+    &--info {
+        font-size: 14px;
     }
 }
-.main__boxes {
-    text-align: center;
-    align-items: center;
-}
+
