@@ -1,37 +1,51 @@
-.module {
-    background-color: #f0ebe5;
-    line-height: 2;
-    &__info{    
-        padding:  45px 0 45px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        justify-content: center;
-        line-height: 1.5;
-
-            &--title {
-                font-size: 24px;
-            }
+.module__benefits {
+    background-color: #f0ebe5; //nombrar variable//
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 113px 1fr 1fr 1fr;
+    padding-top: 41px;
+    gap: 36px;
+     @media all and (min-width: 900px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 113px 1fr;
+        gap: 0;
+        }
             &--info {
                 font-size: 14px;
                 font-weight: 100;
             }
+            &--text{
+            padding: 39px 0 12px;
+                            @media all and (min-width: 900px){
+            }
+            }
             &--motto {
                 align-items: center;
                 text-align: center;
-                width: 322px;
-                height: 113px;
                 font-size: 24px;
                 line-height: 1.5;
                 margin: 0 45px;
-                padding-top: 41px;
+                @media all and (min-width: 900px){
+                grid-column-start: 1;
+                grid-column-end: 4;
+                margin: 0 196px;
+
+            }
+
+    
             }
             &--wrapper {
                 text-align: center;
                 align-items: center;
-                width: 208px;
                 margin: 0px 103px;
                 line-height: 1.5;
+                
+                @media all and (min-width: 900px){
+                    margin: 0 42px 114px;
+                }                
+                @media all and (min-width: 1728px){
+                    margin: 0 42px 114px;
+                }
             }
             &--icon {
                 width: 90px;
@@ -40,8 +54,8 @@
             }
 } 
 
-    &__sending {
-        background-color: orange;
+.module__sending {
+        background-color: $backgroundOrange;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -62,7 +76,7 @@
                 height: 120px;
             }
 }
-}
+
 
 
 .module__enjoy{
@@ -71,11 +85,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 87px 27px 0;
     line-height: 2;
+    width: 100%;
+    @media all and (min-width: 1728px){
+        flex-direction: row;
+    }
     &--wrapper{
-        width: 360px;
-        height: 112px;
+        padding: 87px 27px 0;
+        width: 100%;
     }
     &--title {
         font-size: 24px;
@@ -83,11 +100,18 @@
     &--info {
         font-size: 14px;
     }
-    &--figure{
-        min-width: 414px;
-        height: 304px;
-    }
     &--image{
         width: 100%;
+        height: 304px;
+        background-image: url(../images/creando-espacios.jpg);
+        background-size: cover;
+        background-position: center;
+        @media all and (min-width: 900px){
+            height: 474px;
+        }
+        @media all and (min-width: 1728px){
+            height: 571px;
+        }
+
     }
     }
