@@ -59,3 +59,8 @@
     }
   }
 }
+
+.header__nav a {
+  text-decoration: none;
+  @include t(16px, $mainGreen, 300);
+}

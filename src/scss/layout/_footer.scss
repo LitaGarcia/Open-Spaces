@@ -2,26 +2,34 @@
   color: $secondaryGreen;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  padding: 56px 59px 0 146px;
+  padding: 56px 59px 56px 146px;
   gap: 20px;
   @media all and (min-width: 900px) {
     flex-direction: row;
+    padding: 71px 118px;
   }
+  @media all and (min-width: 900px) {
+    gap: 200px;
+  }
+  &__title {
+    @include t(24, $secondaryGreen, 600);
+    padding-bottom: 12px;
+  }
+
   &__nav {
     width: 207px;
     height: 59px;
-
+    margin-bottom: 30px;
+    line-height: 1;
     &--socialmedia {
       display: flex;
       flex-direction: row;
+      padding-top: 12px;
+    }
+    &--option {
+      @include t(16, $secondaryGreen, 300);
     }
   }
-
-  &___title {
-    @include t(24, $secondaryGreen, 600);
-  }
-
   &__icon {
     width: 24px;
     height: 24px;
@@ -29,4 +37,9 @@
     position: relative;
     left: 90%;
   }
+}
+
+.footer a {
+  text-decoration: none;
+  @include t(16px, $secondaryGreen, 300);
 }

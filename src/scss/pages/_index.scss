@@ -5,3 +5,7 @@ body {
 footer {
   background-color: $mainGreen;
 }
+
+html {
+  scroll-behavior: smooth;
+}
