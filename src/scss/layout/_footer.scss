@@ -19,6 +19,7 @@
   }
 
   &___title {
+    @include t(24, $secondaryGreen, 600);
   }
 
   &__icon {

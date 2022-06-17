@@ -3,8 +3,10 @@ $white: #ffffff;
 $backgroundBrown: #f0ebe5;
 $backgroundOrange: #ff975a;
 $secondaryGreen: #b6c8c9;
+$hoverColor: rosybrown;
 
-@mixin t($fontSize, $fontColor) {
+@mixin t($fontSize, $fontColor, $fontWeight) {
   font-size: $fontSize;
   color: $fontColor;
+  font-weight: $fontWeight;
 }

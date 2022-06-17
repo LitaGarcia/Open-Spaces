@@ -11,21 +11,18 @@
     gap: 0;
   }
   &--info {
-    font-size: 14px;
-    font-weight: 100;
+    @include t(16px, $mainGreen, 300);
   }
   &--text {
-    padding: 39px 0 12px;
+    @include t(20px, $mainGreen, 300);
+    font-weight: 600;
     @media all and (min-width: 900px) {
     }
   }
   &--motto {
     align-items: center;
     text-align: center;
-    // width: 322px;
-    height: 113px;
-    font-size: 24px;
-    line-height: 1.5;
+    @include t(24px, $mainGreen, 600);
     margin: 0 45px;
     @media all and (min-width: 900px) {
       grid-column-start: 1;
@@ -65,10 +62,10 @@
   color: white;
   line-height: 1.5;
   &--title {
-    font-size: 24px;
+    @include t(24px, $white, 600);
   }
   &--info {
-    font-size: 14px;
+    @include t(14px, $white, normal);
   }
   &--icon {
     width: 120px;
@@ -87,15 +84,21 @@
   width: 100%;
   @media all and (min-width: 1728px) {
     flex-direction: row;
+    justify-content: flex-end;
   }
   &--wrapper {
+    align-content: center;
     padding: 87px 27px 0;
+
+    @media all and (min-width: 1728px) {
+      width: 50%;
+    }
   }
   &--title {
-    font-size: 24px;
+    @include t(24px, $mainGreen, 600);
   }
   &--info {
-    font-size: 14px;
+    @include t(14px, $mainGreen, normal);
   }
   &--image {
     width: 100%;
@@ -108,6 +111,7 @@
     }
     @media all and (min-width: 1728px) {
       height: 571px;
+      width: 50%;
     }
   }
 }

@@ -2,35 +2,43 @@
   height: 48px;
   width: 176px;
   background-color: $mainGreen;
-  font-size: 1rem;
+  @include t(16px, $white, 300);
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: $white;
   text-transform: capitalize;
   border: none;
   transition-duration: 0.4s;
-  margin: 10px 0 97px;
   @media all and(min-width: 900px) {
     margin: 10px 633px 0 361px;
   }
   &:hover {
-    background-color: rosybrown;
+    background-color: $hoverColor;
   }
 }
 
-.button_main {
+.button_main1 {
+  width: 175px;
+  height: 48px;
+  margin-top: 5px;
+  background-color: $backgroundOrange;
+  border: none;
+  @include t(16px, $white, 300);
+  text-decoration: underline;
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: $mainGreen;
+  }
+}
+.button_main2 {
   height: 48px;
   width: 176px;
   background-color: $mainGreen;
-  font-size: 1rem;
+  @include t(16px, $white, 300);
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: $white;
   text-transform: capitalize;
   border: none;
   transition-duration: 0.4s;
   margin: 10px 0 97px;
   &:hover {
-    background-color: rosybrown;
+    background-color: $hoverColor;
   }
 }
