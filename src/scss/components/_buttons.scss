@@ -1,16 +1,36 @@
-.button_1 {
-    height: 48px;
-    width: 176px;
-    background-color: $main-green;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: $white;
-    text-transform: capitalize;
-    border: none;
-    transition-duration: 0.4s;
-    margin: 10px 0 97px;
-    &:hover{
-        background-color: rosybrown;
-    }
+.button_header {
+  height: 48px;
+  width: 176px;
+  background-color: $main-green;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: $white;
+  text-transform: capitalize;
+  border: none;
+  transition-duration: 0.4s;
+  margin: 10px 0 97px;
+  @media all and(min-width: 900px) {
+    margin: 10px 633px 0 361px;
+  }
+  &:hover {
+    background-color: rosybrown;
+  }
+}
+
+.button_main {
+  height: 48px;
+  width: 176px;
+  background-color: $main-green;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: $white;
+  text-transform: capitalize;
+  border: none;
+  transition-duration: 0.4s;
+  margin: 10px 0 97px;
+  &:hover {
+    background-color: rosybrown;
+  }
 }

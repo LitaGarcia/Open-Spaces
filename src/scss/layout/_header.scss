@@ -3,14 +3,16 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 19px;
-  gap: 30.5%;
-  &__nav {
-    background-color: blue;
+  @media all and(min-width: 1728px) {
+    padding-top: 76px;
+  }
 
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+    margin-left: 280px;
     @media all and(max-width: 1728px) {
       display: none;
     }
@@ -21,16 +23,29 @@
     font-weight: 600;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 150px;
+    @media all and(min-width: 900px) {
+      margin: 0 323px 0 147px;
+      width: 30%;
+    }
+    @media all and(min-width: 1728px) {
+      margin: 0 323px 0 147px;
+      width: 15%;
+    }
   }
   &__menu {
     display: flex;
-    flex-direction: row;
-    align-items: left;
+    flex-direction: column;
+    align-items: center;
+
     &--logo {
       width: 213px;
       height: 96px;
-      margin-right: 100px;
-      margin-left: 101px;
+      margin: 19px 100px 250px 100px;
+      @media all and(min-width: 1728px) {
+        position: relative;
+        transform: translateY(-75px);
+      }
     }
     &--icon {
       margin: 55px 43px 33px 33px;
@@ -40,7 +55,10 @@
       top: 0;
       color: black;
       @media all and(min-width: 900px) {
-        display: none;
+        position: left;
+      }
+      @media all and(min-width: 1728px) {
+        visibility: hidden;
       }
     }
   }
