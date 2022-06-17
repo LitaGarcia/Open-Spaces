@@ -8,21 +8,23 @@
   }
 
   &__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 30px;
-    margin-left: 280px;
+    @media all and (min-width: 1728px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      gap: 30px;
+      margin-left: 280px;
+    }
     @media all and(max-width: 1728px) {
       display: none;
     }
   }
   &__title {
-    color: $main-green;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    font-weight: bold;
+    // color: $main-green;
+    // font-family: "Poppins", sans-serif;
+    // font-weight: 600;
+    // font-size: 24px;
+    // font-weight: bold;
     margin-bottom: 150px;
     @media all and(min-width: 900px) {
       margin: 0 323px 0 147px;
@@ -39,11 +41,8 @@
     align-items: center;
 
     &--logo {
-      width: 213px;
-      height: 96px;
       margin: 19px 100px 250px 100px;
       @media all and(min-width: 1728px) {
-        position: relative;
         transform: translateY(-75px);
       }
     }
