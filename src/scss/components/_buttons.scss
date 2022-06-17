@@ -1,5 +1,5 @@
 .button_1 {
-    height: 46px;
+    height: 48px;
     width: 176px;
     background-color: $main-green;
     font-size: 1rem;
@@ -11,7 +11,6 @@
     transition-duration: 0.4s;
     margin: 10px 0 97px;
     &:hover{
-        background-color: $background;
-        color: $main-green;
+        background-color: rosybrown;
     }
 }
