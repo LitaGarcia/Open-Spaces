@@ -1,0 +1,32 @@
+.footer {
+  background-color: $main-green;
+  color: $secondary-green;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 56px 59px 56px 146px;
+  gap: 20px;
+  @media all and (min-width: 900px) {
+    flex-direction: row;
+  }
+  &__nav {
+    width: 207px;
+    height: 59px;
+
+    &--socialmedia {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &___title {
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    color: $white;
+    position: relative;
+    left: 100%;
+  }
+}
