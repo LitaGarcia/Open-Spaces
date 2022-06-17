@@ -10,6 +10,9 @@
   @media all and(min-width: 900px) {
     margin: 10px 633px 0 361px;
   }
+  @media all and(min-width: 1728px) {
+    margin-right: 1360px;
+  }
   &:hover {
     background-color: $hoverColor;
   }

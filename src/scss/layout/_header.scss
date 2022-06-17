@@ -14,12 +14,16 @@
       justify-content: left;
       gap: 30px;
       margin-left: 280px;
+      position: fixed;
+      top: 0;
+      padding-top: 65px;
     }
     @media all and(max-width: 1728px) {
       display: none;
     }
   }
   &__title {
+    height: 112px;
     @include t(24px, $mainGreen, 600);
     margin-bottom: 150px;
     @media all and(min-width: 900px) {
@@ -28,8 +32,7 @@
       font-size: 36px;
     }
     @media all and(min-width: 1728px) {
-      margin: 0 323px 0 147px;
-      width: 15%;
+      width: 58%;
     }
   }
   &__menu {
@@ -49,7 +52,7 @@
       height: 24px;
       position: fixed;
       top: 0;
-      color: black;
+      color: $mainGreen;
       @media all and(min-width: 900px) {
         position: left;
       }
