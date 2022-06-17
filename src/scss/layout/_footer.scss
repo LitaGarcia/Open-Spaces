@@ -1,4 +1,18 @@
 .footer{
     display: flex;
     flex-direction: column;
+    align-items: left;
+    padding: 56px 59px 56px 146px;
+    gap: 20px;
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        width: 207px;
+        height: 59px;
+    }
+    &___title {
+
+    }
 }
